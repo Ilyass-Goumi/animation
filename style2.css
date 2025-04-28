@@ -1,0 +1,287 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   flex-direction: column;
+background-color: black;
+height: 150vh;
+
+
+
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:250px ;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+    position: relative;
+    overflow: hidden;
+   
+    
+
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:250px ;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow: hidden;
+    position: relative;
+
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:250px ;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow: hidden;
+    position: relative;
+
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding: 60px 0px;
+   position: relative;
+   opacity: 1;
+   width: 100%;
+   height: 100%;
+   color: white;
+ 
+}
+.content1::after{
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding: 60px 0px;
+   position: absolute;
+   color: white;
+   width: 100%;
+   height: 100%;
+ 
+  
+
+}
+.logo1{
+    padding-bottom: 40px;
+}
+.logo1 i{
+    color: blue;
+    font-size: 40px;
+}
+h2{
+    padding-bottom: 35px;
+}
+p{
+    font-weight: bold;
+}
+
+/* container1*/
+.container1::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 150%;
+    background-color: blue;
+    animation: rotate 2s linear infinite;
+    z-index: -1;
+    
+}
+.container1::after{
+content: "";
+width: 240px;
+height: 240px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+border-radius: 10px;
+z-index: -1;
+
+
+
+
+}
+.container1:hover::after{
+    background-color: rgb(128, 128, 128);
+   
+}
+.content1:hover{
+color: black;
+}
+.container1:hover::before{
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.container1:hover::after{
+    background-color:blue;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+   
+}
+.logo1 i:hover{
+    color: white;
+}
+/*container 2*/
+
+.container2::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 150%;
+    background-color: red;
+    animation: rotate 2s linear infinite;
+    z-index: -1;
+    
+}
+.container2::after{
+content: "";
+width: 240px;
+height: 240px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+border-radius: 10px;
+z-index: -1;
+
+
+
+}
+.container2:hover::after{
+    background-color: rgb(128, 128, 128);
+   
+}
+.container2:hover::before{
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logo2{
+    padding-bottom: 40px;
+}
+.logo2 i{
+    color: red;
+    font-size: 40px;
+    position: absolute;
+}
+h2{
+    padding-bottom: 35px;
+}
+p{
+    font-weight: bold;
+}
+.container2:hover::after{
+    background-color: red;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+   
+}
+.logo2 i:hover{
+    color: white;
+}
+  /* container3 */
+
+  .container3::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 150%;
+    background-color: yellow;
+    animation: rotate 2s linear infinite;
+    z-index: -1;
+    
+}
+.container3::after{
+content: "";
+width: 240px;
+height: 240px;
+background-color: rgb(0, 0, 0);
+position: absolute;
+border-radius: 10px;
+z-index: -1;
+
+
+
+}
+.container3:hover::after{
+    background-color: rgb(128, 128, 128);
+   
+}
+.container3:hover::before{
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logo3{
+    padding-bottom: 40px;
+}
+.logo3 i{
+    color: yellow;
+    font-size: 40px;
+}
+h2{
+    padding-bottom: 35px;
+}
+p{
+    font-weight: bold;
+} 
+.container3:hover::after{
+    background-color: yellow;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+   
+}
+.logo3 i:hover{
+color: white;
+}
+
+
+
+
+
+
